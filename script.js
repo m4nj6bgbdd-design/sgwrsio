@@ -7,7 +7,7 @@ import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js
   4) Upload these files to GitHub Pages.
 */
 const SUPABASE_URL = "https://kfxzmmgjijqmvbdfamgk.supabase.co";
-const SUPABASE_ANON_KEY = sb_publishable_................................;
+const SUPABASE_ANON_KEY = "sb_publishable_................................";
 
 const configured = !SUPABASE_URL.startsWith("PASTE_") && !SUPABASE_ANON_KEY.startsWith("PASTE_");
 const supabase = configured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
