@@ -15,15 +15,15 @@
           <div class="tagline">Gwir. Gweithgar. Gwych</div>
         </div>
         <div class="header-actions">
-          <button class="round security" aria-label="Diogelwch">♡</button>
-          <div class="avatar">NW</div>
+          <button class="round" id="authButton" aria-label="Cyfrif">↪</button>
+          <div class="avatar" id="headerAvatar">?</div>
         </div>
       </div>
       <nav id="sectionNav" class="section-nav">
         <button data-section="home">I Chi</button>
         <button data-section="news">Newyddion</button>
         <button data-section="clubs">Clybiau</button>
-        <button data-section="noticeboard">Pleidleisiau</button>
+        <button data-section="votes">Pleidleisiau</button>
       </nav>
     </header>
 
@@ -32,11 +32,15 @@
     <nav class="bottom-nav">
       <button data-page="home"><span class="icon">⌂</span><span>Hafan</span></button>
       <button data-page="post"><span class="icon">＋</span><span>Postio</span></button>
-      <button data-page="messages"><span class="icon">□</span><span>Neges</span></button>
+      <button data-page="messages"><span class="icon">□</span><span>Negeseuon</span></button>
       <button data-page="clubs"><span class="icon">☆</span><span>Clybiau</span></button>
       <button data-page="profile"><span class="icon">♙</span><span>Proffil</span></button>
     </nav>
   </div>
-  <script src="script.js"></script>
+
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modalRoot"></div>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
